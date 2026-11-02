@@ -1,33 +1,48 @@
-# Awesome IT Asset Discovery & Hygiene [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome IT Asset Discovery & Hygiene Banner" width="100%" />
+</p>
 
-> A curated list of leading SaaS platforms and open-source tools for **IT Asset Discovery**, **Cyber Asset Attack Surface Management (CAASM)**, **IT Hygiene**, and **Configuration Management Databases (CMDB)**.
+# 🛡️ Awesome IT Asset Discovery & Hygiene
 
-Discover every unmanaged device, cloud workload, SaaS app, and identity across your digital footprint. Continuously reconcile multi-source telemetry, eliminate visibility blind spots, verify security agent coverage, and maintain an audit-ready, real-time inventory.
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://diccord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-IT-Asset-Discovery-Hygiene/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-IT-Asset-Discovery-Hygiene?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-IT-Asset-Discovery-Hygiene/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-IT-Asset-Discovery-Hygiene?style=social" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-IT-Asset-Discovery-Hygiene/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
----
+> 🌐 A curated list of leading SaaS platforms and open-source tools for **IT Asset Discovery**, **Cyber Asset Attack Surface Management (CAASM)**, **IT Hygiene**, and **Configuration Management Databases (CMDB)**.
 
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS & Commercial Platforms](#saas--commercial-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [Architectural Comparison: SaaS vs Open Source](#architectural-comparison-saas-vs-open-source)
-- [How to Contribute](#how-to-contribute)
-- [License & Disclaimer](#license--disclaimer)
-
----
-
-## Sector Overview & Market Dynamics
-
-The global dedicated IT asset discovery and automated inventory market is valued at approximately **$2.8B to $3.0B**, expanding at a **CAGR of ~8% to 11%** (within the broader IT Asset Management and Attack Surface Management sector tracking toward **$8.4B+**). 
-
-Market dynamics are **moderately fragmented yet increasingly polarized**: enterprise endpoint discovery and real-time query infrastructure are dominated by established platform giants (Microsoft, CrowdStrike, Tanium), while the dedicated Cyber Asset Attack Surface Management (CAASM) and cross-source reconciliation tier is led by category-defining scale-ups (Armis, Axonius) alongside active consolidation by security suites acquiring niche discovery leaders (e.g., Arctic Wolf acquiring Sevco Security, Freshworks acquiring Device42).
+Discover every unmanaged device, cloud workload, SaaS app, and identity across your digital footprint. Continuously reconcile multi-source telemetry, eliminate visibility blind spots, verify security agent coverage, and maintain an audit-ready, real-time inventory. 🚀
 
 ---
 
-## SaaS & Commercial Platforms
+## 📑 Table of Contents
 
-The table below lists category-leading commercial IT asset discovery and cyber hygiene platforms, sorted in descending order by company scale (market capitalization, valuation, or ARR tier).
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Commercial Platforms](#️-saas--commercial-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🏛️ Architectural Comparison: SaaS vs Open Source](#️-architectural-comparison-saas-vs-open-source)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Community](#-support--community)
+- [📈 Star History](#-star-history)
+- [📜 License & Disclaimer](#-license--disclaimer)
+
+---
+
+## 📊 Sector Overview & Market Dynamics
+
+The global dedicated IT asset discovery and automated inventory market is valued at approximately **$2.8B to $3.0B**, expanding at a **CAGR of ~8% to 11%** (within the broader IT Asset Management and Attack Surface Management sector tracking toward **$8.4B+**). 📈
+
+Market dynamics are **moderately fragmented yet increasingly polarized**: enterprise endpoint discovery and real-time query infrastructure are dominated by established platform giants (Microsoft, CrowdStrike, Tanium), while the dedicated Cyber Asset Attack Surface Management (CAASM) and cross-source reconciliation tier is led by category-defining scale-ups (Armis, Axonius) alongside active consolidation by security suites acquiring niche discovery leaders (e.g., Arctic Wolf acquiring Sevco Security, Freshworks acquiring Device42). 🔍
+
+---
+
+## ☁️ SaaS & Commercial Platforms
+
+The table below lists category-leading commercial IT asset discovery and cyber hygiene platforms, sorted in descending order by company scale (market capitalization, valuation, or ARR tier). 🏢
 
 | Platform | Company Valuation / Revenue | Starting Tier Pricing | Free Tier / Trial Limit | Key Focus & Primary Discovery Capability |
 | :--- | :--- | :--- | :--- | :--- |
@@ -44,9 +59,9 @@ The table below lists category-leading commercial IT asset discovery and cyber h
 
 ---
 
-## Open-Source GitHub Projects
+## 💻 Open-Source GitHub Projects
 
-The following open-source solutions provide self-hosted device discovery, endpoint telemetry querying, ITAM, and network CMDB foundations. Repositories are sorted in descending order by GitHub star count.
+The following open-source solutions provide self-hosted device discovery, endpoint telemetry querying, ITAM, and network CMDB foundations. Repositories are sorted in descending order by GitHub star count. 🌟
 
 | Project | GitHub Stars | Primary Domain / Focus | Key Capabilities & Architecture |
 | :--- | :--- | :--- | :--- |
@@ -65,7 +80,7 @@ The following open-source solutions provide self-hosted device discovery, endpoi
 
 ---
 
-## Architectural Comparison: SaaS vs Open Source
+## 🏛️ Architectural Comparison: SaaS vs Open Source
 
 | Architectural Capability | Commercial SaaS / CAASM (Axonius, Armis, Sevco, Tanium) | Open-Source Solutions (osquery, NetBox, Wazuh, Snipe-IT) |
 | :--- | :--- | :--- |
@@ -77,9 +92,9 @@ The following open-source solutions provide self-hosted device discovery, endpoi
 
 ---
 
-## How to Contribute
+## 🤝 How to Contribute
 
-We welcome contributions from IT engineers, security professionals, and open-source maintainers:
+We welcome contributions from IT engineers, security professionals, and open-source maintainers! 🛠️
 
 1. **Fork the repository** on GitHub.
 2. **Add or refine an entry** in `README.md`:
@@ -90,7 +105,24 @@ We welcome contributions from IT engineers, security professionals, and open-sou
 
 ---
 
-## License & Disclaimer
+## 💖 Support & Community
+
+Thank you for exploring and using this curated resource! If you find this repository helpful, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others discover it!
+- 🍴 **Fork and contribute** tools, updates, and architectural notes.
+- 📢 **Share with colleagues** across DevOps, SecOps, and ITAM teams.
+- ☕ **Sponsor or buy a coffee**: Support ongoing curation and maintenance via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-IT-Asset-Discovery-Hygiene&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-IT-Asset-Discovery-Hygiene&type=date&legend=top-left)
+
+---
+
+## 📜 License & Disclaimer
 
 - Licensed under the [MIT License](LICENSE).
 - *Disclaimer*: This repository is community-curated for informational and architectural evaluation purposes. Product names, logos, and brands belong to their respective copyright holders. Pricing, free tier allowances, and enterprise valuation metrics are based on publicly available documentation, government procurement records, and vendor filings. Always verify current commercial terms directly with vendor sales channels prior to procurement.
