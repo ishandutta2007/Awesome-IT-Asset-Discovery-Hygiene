@@ -1,193 +1,96 @@
-# Awesome-IT-Asset-Discovery-Hygiene
+# Awesome IT Asset Discovery & Hygiene [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-## Top IT Asset Discovery & Hygiene Ecosystem
+> A curated list of leading SaaS platforms and open-source tools for **IT Asset Discovery**, **Cyber Asset Attack Surface Management (CAASM)**, **IT Hygiene**, and **Configuration Management Databases (CMDB)**.
 
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Agentless Discovery, Asset Reconciliation & Self-Hosted CMDB Platforms*  
-
-**Last updated: November 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **IT Asset Discovery & Hygiene**. These tools enable organizations to continuously discover every device, application, and identity across their environment—then reconcile that data to eliminate blind spots, track agent coverage, and maintain an accurate, audit-ready inventory.
-
-
-
-**Examples** include CrowdStrike Falcon Discover, Axonius, Tanium Asset, Armis, Lansweeper, Qualys CSAM, runZero, Sevco Security, Device42, and Microsoft Defender Device Inventory (the category leaders).
-
-
-
-**Open-source emphasis**: IT Asset Discovery & Hygiene is a domain where open-source tooling is **fragmented across distinct discovery philosophies but genuinely capable for specific layers**. **Wazuh's IT Hygiene module** is the most notable new entrant—introduced in v4.13.0, it provides a centralized dashboard for endpoint inventory including hardware specs, installed packages, running processes, open ports, user accounts, and **browser extensions**, all queryable across the fleet . **NetAlertX** offers continuous network visibility with a centralized source of truth for connected devices, detecting unauthorized hardware and Shadow IT . For traditional CMDB foundations, **OCS Inventory NG** provides agent-based inventory across Windows, Linux, macOS, and Android with network discovery for agentless devices . The critical caveat: **no open-source project replicates the cross-source reconciliation and normalization** of Axonius or Sevco—those platforms aggregate data from 1,000+ sources, deduplicate conflicting records, and build a unified asset graph .
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-products)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[CrowdStrike Falcon Discover](https://www.crowdstrike.com/)**  
-
-  IT hygiene and asset discovery within the Falcon platform; identifies unmanaged devices, tracks agent coverage, and reconciles inventory with ServiceNow CMDB for enriched context . **Best for CrowdStrike customers** wanting unified endpoint visibility and hygiene checks.
-
-
-
-- **[Axonius](https://www.axonius.com/)**  
-
-  Cyber asset attack surface management platform integrating **1,000+ sources** into a single normalized asset model; covers cyber assets, exposures, software, SaaS, identities, and IoT/OT/IoMT . **Best for organizations wanting comprehensive cross-source reconciliation**—the benchmark for CAASM.
-
-
-
-- **[Tanium Asset](https://www.tanium.com/)**  
-
-  Real-time endpoint discovery and inventory without pre-ingestion; finds every managed and unmanaged endpoint across cloud, on-prem, and hybrid environments, providing high-fidelity data to CMDB and SIEM systems . **Best for large fleets** needing instant interrogation at scale.
-
-
-
-- **[Armis](https://www.armis.com/)**  
-
-  Agentless cyber exposure management powered by the **Asset Intelligence Engine**—a cloud-based device security data lake tracking billions of assets in real time for classification and threat detection . **Best for agentless visibility** across IT, IoT, IoMT, OT, and cloud.
-
-
-
-- **[Lansweeper](https://www.lansweeper.com/)**  
-
-  Automated hardware discovery across IT, OT, cloud, and remote environments using combined agent-based and agentless, active and passive methods; tracks lifecycle from procurement to retirement with NIST/ISO 19770/GDPR audit readiness .
-
-
-
-- **[Qualys CSAM](https://www.qualys.com/)**  
-
-  CyberSecurity Asset Management with external attack surface management (EASM), automatic tagging for third-party assets, IPv6 support, and business context grouping . **Best for Qualys VMDR customers** wanting unified internal and external asset visibility.
-
-
-
-- **[runZero](https://www.runzero.com/)**  
-
-  Network discovery and asset inventory with **continuous scanning** options; supports performance tuning for large networks (scan speed, max group size, subnet sampling) and structured tagging per site for overlapping IP ranges . **Best for large, distributed networks** needing active discovery control.
-
-
-
-- **[Sevco Security](https://www.sevcosecurity.com/)**  
-
-  Asset intelligence platform with **Asset Graph** that continuously deduplicates and correlates data from endpoints, cloud, identity, and vulnerability scanners; claims **40% of assets are typically missing from inventory** . **Best for closing inventory blind spots** through multi-source reconciliation.
-
-
-
-- **[Device42](https://www.device42.com/)**  
-
-  Hybrid cloud CMDB with agentless discovery and dependency mapping; pre-configured CMDB eliminates CI design, with visualizations and a deep integration library .
-
-
-
-- **[Microsoft Defender Device Inventory](https://learn.microsoft.com/)**  
-
-  Authoritative source for all devices visible to Defender for Endpoint, including onboarded and discovered devices; tabs for Computers & mobile, Network devices, IoT/OT, and Uncategorized . **Best for Microsoft Defender customers** wanting unified device visibility.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Endpoint IT Hygiene (Wazuh)
-
-
-
-- **[Wazuh IT Hygiene](https://github.com/wazuh/wazuh)**  
-
-  Wazuh v4.13.0 introduced a dedicated **IT Hygiene capability** (GPLv2) providing a centralized dashboard for endpoint inventory . Features: **hardware specs** (CPU, memory, storage), **OS details**, **installed packages and versions**, **running processes and services**, **network configurations and open ports**, **user accounts and group memberships**, and **browser extensions with permissions** . **Practical use cases**: patch management (identify endpoints running vulnerable package versions), browser extension auditing (detect high-risk extensions with excessive permissions), and dormant account detection (filter accounts by last login dates and shell access) . **Best for Wazuh users** wanting inventory visibility alongside SIEM/XDR capabilities—but it is endpoint-focused, not network discovery.
-
-
-
-### Network Discovery & Visibility (NetAlertX)
-
-
-
-- **[NetAlertX](https://github.com/netalertx/NetAlertX)**  
-
-  Open-source **network visibility and asset intelligence framework** (Python) providing a centralized source of truth for network infrastructure . Features: **continuous monitoring** for unauthorized asset discovery, connection state changes, and IPAM drift; **multiple scan methods** including arp-scan, Pi-hole DB import, DHCP lease imports, UNIFI controller, and SNMP router import; **80+ notification gateways**; **workflows module** for automated device categorization and cleanup policies; and **RBAC via reverse proxy** integration . **Best for local network visibility** with automated governance—but it is network-scoped, not a full CMDB.
-
-
-
-### Traditional CMDB & Inventory (OCS Inventory NG)
-
-
-
-- **[OCS Inventory NG](https://github.com/OCSInventory-NG)**  
-
-  Open-source **IT asset inventory and software deployment** tool (GPL v2) . Architecture: **agents** on Windows, Linux, macOS, BSD, and Android report hardware and software data to a central server; **network discovery** finds devices that cannot run an agent; **software deployment** packages; **web console and REST API** . **Sovereignty**: French-developed, self-hosted with no vendor cloud service—EU data residency and full source auditability . **Best for organizations wanting a proven, self-hosted inventory foundation**—but it is agent-heavy and lacks the modern UX of commercial tools.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Cloudlist** — Open-source multi-cloud asset enumeration tool (ProjectDiscovery) for blue teams; centralizes inventory across cloud providers with minimal configuration and multiple output formats . **Best for cloud asset discovery** across AWS, Azure, GCP—not on-premises or endpoint discovery.
-
-- **TWIGS** — Open-source Python CLI for **agentless attack surface discovery** (ThreatWorx); discovers code, containers, cloud, servers, and network devices without storing credentials on the platform . **Best for zero-trust discovery** where credential sharing is a concern—but it is a CLI, not a managed platform.
-
-
-
-**Frameworks for building custom systems**: For **endpoint inventory alongside SIEM**, Wazuh IT Hygiene provides the most integrated open-source option . For **network visibility and Shadow IT detection**, NetAlertX . For **traditional agent-based CMDB**, OCS Inventory NG . For **cloud asset enumeration**, Cloudlist . **No open-source project replicates the cross-source reconciliation** of Axonius (1,000+ sources) or Sevco (asset graph deduplication)—those are commercial CAASM advantages .
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- IT asset discovery platforms handling infrastructure data must comply with organizational security policies and privacy regulations; **self-hosted solutions place full responsibility for scan authorization, credential management, and data accuracy on the operator**.
-
-- **Open-source asset discovery is fragmented by layer**—Wazuh provides endpoint inventory , NetAlertX provides network visibility , and OCS Inventory provides traditional CMDB . However, **no open-source project matches the cross-source reconciliation and unified asset graph** of Axonius or Sevco . Choose based on whether you need endpoint hygiene (Wazuh), network discovery (NetAlertX), or CMDB inventory (OCS).
-
-- Verify license terms for commercial use; Wazuh uses GPLv2, NetAlertX is open-source (check repository), and OCS Inventory NG uses GPL v2 .
-
-
+Discover every unmanaged device, cloud workload, SaaS app, and identity across your digital footprint. Continuously reconcile multi-source telemetry, eliminate visibility blind spots, verify security agent coverage, and maintain an audit-ready, real-time inventory.
 
 ---
 
+## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS & Commercial Platforms](#saas--commercial-platforms)
+- [Open-Source GitHub Projects](#open-source-github-projects)
+- [Architectural Comparison: SaaS vs Open Source](#architectural-comparison-saas-vs-open-source)
+- [How to Contribute](#how-to-contribute)
+- [License & Disclaimer](#license--disclaimer)
 
-**Made for IT asset managers, security engineers, and organizations building asset visibility and hygiene capabilities.**  
+---
 
-Let's make asset discovery and hygiene more open, but with clear eyes about the cross-source reconciliation gap that commercial CAASM platforms still fill.
+## Sector Overview & Market Dynamics
+
+The global dedicated IT asset discovery and automated inventory market is valued at approximately **$2.8B to $3.0B**, expanding at a **CAGR of ~8% to 11%** (within the broader IT Asset Management and Attack Surface Management sector tracking toward **$8.4B+**). 
+
+Market dynamics are **moderately fragmented yet increasingly polarized**: enterprise endpoint discovery and real-time query infrastructure are dominated by established platform giants (Microsoft, CrowdStrike, Tanium), while the dedicated Cyber Asset Attack Surface Management (CAASM) and cross-source reconciliation tier is led by category-defining scale-ups (Armis, Axonius) alongside active consolidation by security suites acquiring niche discovery leaders (e.g., Arctic Wolf acquiring Sevco Security, Freshworks acquiring Device42).
+
+---
+
+## SaaS & Commercial Platforms
+
+The table below lists category-leading commercial IT asset discovery and cyber hygiene platforms, sorted in descending order by company scale (market capitalization, valuation, or ARR tier).
+
+| Platform | Company Valuation / Revenue | Starting Tier Pricing | Free Tier / Trial Limit | Key Focus & Primary Discovery Capability |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft Defender Device Inventory](https://learn.microsoft.com/)** | **~$3.1T Market Cap** (Microsoft) | **$3.00 / user / month** (Defender for Endpoint P1; $5.20/user/mo for P2 standalone) | **30-day free trial** (up to 250 evaluation licenses with full EDR & discovery features) | Native device inventory built into Windows/Defender sensor; discovers unmanaged endpoints, IoT/OT, and network devices passively via neighbor probing. |
+| **[CrowdStrike Falcon Discover](https://www.crowdstrike.com/)** | **~$78B Market Cap** (CrowdStrike) | **~$28.00 / endpoint / year** (baseline enterprise list add-on or Falcon Enterprise bundle) | **15-day free trial** (Falcon platform trial covering up to 100 endpoints) | IT hygiene module leveraging the lightweight Falcon endpoint sensor to expose unmanaged assets, monitor admin credentials, and track agent deployment coverage. |
+| **[Qualys CSAM](https://www.qualys.com/)** | **~$5.5B Market Cap** (Qualys) | **~$10.87 / asset / year** (~$10,870/yr for starter 1,000-asset band via public catalog) | **30-day free trial** (includes full CSAM discovery & External Attack Surface Management for evaluation scopes) | Combines passive network sensors, cloud agents, and External Attack Surface Management (EASM) with two-way ServiceNow CMDB synchronization. |
+| **[Tanium Asset](https://www.tanium.com/)** | **~$9B Valuation** (~$700M+ ARR) | **~$20.00 to $24.00 / endpoint / year** (base platform; minimum fleet starter typically 2,000 endpoints) | **No self-service free tier** (30-day guided interactive lab & proof-of-concept trial upon enterprise qualification) | Linear-chain architecture providing instantaneous queries across distributed endpoints within seconds without requiring centralized database pre-indexing. |
+| **[Armis](https://www.armis.com/)** | **$6.1B Valuation** (~$340M+ ARR) | **~$3,250 / month** (~$39,000/yr minimum starter tier covering 0–2,500 assets on AWS Marketplace) | **30-day free trial** (guided enterprise trial / exposure assessment proof-of-value) | 100% agentless cyber exposure management powered by the Armis Asset Intelligence Engine; excels at unmanaged IoT, IoMT, OT, and medical device classification. |
+| **[Axonius](https://www.axonius.com/)** | **$2.6B Valuation** (~$200M+ ARR) | **~$34,000 / year** (entry-level commercial tier for up to 500–2,500 assets) | **30-day free trial** (cloud-hosted trial connecting up to 10 adapters for correlated asset mapping) | The CAASM industry benchmark; connects via API to 1,000+ infrastructure and security tools to normalize, deduplicate, and build a unified cyber asset graph. |
+| **[Lansweeper](https://www.lansweeper.com/)** | **~$920M Valuation** (€800M+ acquisition) | **$239 / month** ($2,868 billed annually, Starter tier covering up to 2,000 assets) | **Free forever plan** for up to **100 assets** (or 14-day unrestricted trial of Pro/Enterprise) | Combines active IP network scanning, agentless discovery, and cross-platform scanning across IT, OT, and cloud environments with hardware lifecycle tracking. |
+| **[Device42](https://www.device42.com/)** | **$230M Valuation** (Acquired by Freshworks) | **$1,449 / year** (Core Starter tier for up to 100 devices and 1,000 IP addresses) | **14-day free trial** (unlimited autodiscovery appliances in virtual environments) | Dedicated hybrid cloud CMDB with agentless discovery, automated application dependency mapping (ADM), and data center infrastructure management (DCIM). |
+| **[Sevco Security](https://www.sevcosecurity.com/)** | **~$49M Raised** (Acquired by Arctic Wolf) | **Quote-based enterprise contract** (typically ~$18,000–$30,000/yr baseline private offers) | **30-day proof-of-concept trial** (managed enterprise evaluation of multi-source 4D Asset Graph) | Cloud-native asset intelligence with continuous 4D Asset Graph correlation; pinpoints inventory blind spots and security tool telemetry gaps. |
+| **[runZero](https://www.runzero.com/)** | **$20M Raised** (Acquired by Dragos) | **$5,000 / year** (commercial platform starter tier for up to 500 managed assets) | **Free forever plan** (Community Edition) for up to **100 assets** (plus 21-day unrestricted trial) | Proprietary scanner by HD Moore providing rapid, safe, unauthenticated network discovery, active fingerprinting, and hardware classification without credentials. |
+
+---
+
+## Open-Source GitHub Projects
+
+The following open-source solutions provide self-hosted device discovery, endpoint telemetry querying, ITAM, and network CMDB foundations. Repositories are sorted in descending order by GitHub star count.
+
+| Project | GitHub Stars | Primary Domain / Focus | Key Capabilities & Architecture |
+| :--- | :--- | :--- | :--- |
+| **[osquery](https://github.com/osquery/osquery)** | [![Stars](https://img.shields.io/github/stars/osquery/osquery?style=social&color=white)](https://github.com/osquery/osquery/stargazers) | Endpoint Instrumentation & Telemetry | Exposes the underlying operating system as an interactive relational database. Execute standard SQL queries against running processes, open network sockets, installed packages, browser extensions, and hardware devices across Linux, macOS, and Windows. |
+| **[NetBox](https://github.com/netbox-community/netbox)** | [![Stars](https://img.shields.io/github/stars/netbox-community/netbox?style=social&color=white)](https://github.com/netbox-community/netbox/stargazers) | Network Infrastructure Source of Truth | Leading DCIM and IPAM tool designed specifically for network automation and infrastructure modeling. Acts as the definitive source of truth for IP allocation, physical cabling, rack layouts, virtual machines, and tenant devices. |
+| **[Wazuh IT Hygiene](https://github.com/wazuh/wazuh)** | [![Stars](https://img.shields.io/github/stars/wazuh/wazuh?style=social&color=white)](https://github.com/wazuh/wazuh/stargazers) | Host IT Hygiene & SIEM Integration | Unified IT hygiene and security platform. Provides central dashboard inventory across endpoints: CPU/RAM hardware specs, installed application versions, listening ports, local users, and suspicious browser extensions for fleet-wide audit compliance. |
+| **[Snipe-IT](https://github.com/snipe/snipe-it)** | [![Stars](https://img.shields.io/github/stars/snipe/snipe-it?style=social&color=white)](https://github.com/snipe/snipe-it/stargazers) | IT Asset & License Management (ITAM) | Feature-rich web-based IT asset management system. Tracks physical hardware lifecycles, user assignments, software license entitlements, warranty expirations, barcode/QR labeling, and asset check-in/check-out workflows. |
+| **[Nmap](https://github.com/nmap/nmap)** | [![Stars](https://img.shields.io/github/stars/nmap/nmap?style=social&color=white)](https://github.com/nmap/nmap/stargazers) | Network Discovery & Port Auditing | The industry-standard network exploration and security scanning tool. Discovers hosts on subnets, probes active raw packet services, identifies remote OS signatures, and inspects network attack surfaces via the Nmap Scripting Engine (NSE). |
+| **[NetAlertX](https://github.com/netalertx/NetAlertX)** | [![Stars](https://img.shields.io/github/stars/netalertx/NetAlertX)](https://github.com/netalertx/NetAlertX/stargazers) | LAN Discovery & Rogue Device Detection | Wi-Fi and network intelligence scanner. Continuously monitors ARP tables, DHCP leases, UniFi controllers, and Pi-hole databases to instantly detect unknown devices, shadow IT, and IPAM changes across subnets with 80+ notification integrations. |
+| **[Fleet](https://github.com/fleetdm/fleet)** | [![Stars](https://img.shields.io/github/stars/fleetdm/fleet?style=social&color=white)](https://github.com/fleetdm/fleet/stargazers) | Enterprise osquery Manager & MDM | Enterprise-grade device management server that orchestrates osquery at scale. Enables scheduled queries, GitOps-based device posture policies, real-time vulnerability checks, and automated cross-platform MDM controls across laptop and server fleets. |
+| **[GLPI](https://github.com/glpi-project/glpi)** | [![Stars](https://img.shields.io/github/stars/glpi-project/glpi?style=social&color=white)](https://github.com/glpi-project/glpi/stargazers) | Open-Source ITSM & CMDB | Complete ITIL-aligned service management and asset inventory platform. Features automated network discovery, inventory ingestion from GLPI Agent / OCS Inventory, license compliance tracking, and service desk integration. |
+| **[iTop](https://github.com/Combodo/iTop)** | [![Stars](https://img.shields.io/github/stars/Combodo/iTop?style=social&color=white)](https://github.com/Combodo/iTop/stargazers) | ITIL Service Management & CMDB | Web-based CMDB and IT service management hub. Models complex dependency graphs between servers, network switches, services, and business processes with complete configuration change tracking. |
+| **[Cloudlist](https://github.com/projectdiscovery/cloudlist)** | [![Stars](https://img.shields.io/github/stars/projectdiscovery/cloudlist?style=social&color=white)](https://github.com/projectdiscovery/cloudlist/stargazers) | Multi-Cloud Asset Enumeration | Cloud reconnaissance CLI utility designed by ProjectDiscovery. Pulls live asset inventory, public IPs, and DNS records from multiple cloud providers (AWS, Azure, GCP, Cloudflare, DigitalOcean, Fastly, Scaleway) with unified output formatting. |
+| **[OCS Inventory NG](https://github.com/OCSInventory-NG/OCSInventory-Server)** | [![Stars](https://img.shields.io/github/stars/OCSInventory-NG/OCSInventory-Server?style=social&color=white)](https://github.com/OCSInventory-NG/OCSInventory-Server/stargazers) | Hardware/Software Inventory & CMDB | Self-hosted French inventory solution ensuring full European data sovereignty. Collects hardware configuration, installed software packages, and peripheral details via lightweight cross-platform client agents and network IP discovery. |
+| **[TWIGS](https://github.com/threatworx/twigs)** | [![Stars](https://img.shields.io/github/stars/threatworx/twigs?style=social&color=white)](https://github.com/threatworx/twigs/stargazers) | Agentless Attack Surface Discovery | Lightweight Python CLI tool by ThreatWorx for agentless attack surface discovery. Discovers source code repositories, container images, virtual machines, cloud instances, and perimeter network devices without retaining centralized credentials. |
+
+---
+
+## Architectural Comparison: SaaS vs Open Source
+
+| Architectural Capability | Commercial SaaS / CAASM (Axonius, Armis, Sevco, Tanium) | Open-Source Solutions (osquery, NetBox, Wazuh, Snipe-IT) |
+| :--- | :--- | :--- |
+| **Cross-Source Data Normalization** | **Automated**: Normalizes and deduplicates hostnames, MACs, cloud instance IDs, and IP histories across 1,000+ third-party APIs. | **Manual / Scripted**: Requires custom ETL pipelines, middleware connectors, or manual database imports. |
+| **Agentless Device Discovery** | **Continuous**: Combines passive traffic analysis, active network fingerprinting, and API polling across hypervisors and switches. | **Modular**: Requires pairing tools (e.g., Nmap or NetAlertX for LAN sweeps + Cloudlist for cloud infrastructure). |
+| **Endpoint Telemetry Fidelity** | **High**: Pre-packaged compliance, vulnerability mapping, and remediation actions. | **Exceptional via osquery / Wazuh**: Offers granular low-level kernel, process, socket, and software query capabilities. |
+| **Data Sovereignty & Privacy** | **Vendor-Hosted / Cloud**: Subject to cloud vendor data residency and privacy compliance frameworks. | **100% On-Premises**: Complete infrastructure autonomy; ideal for air-gapped networks, defense, and strict GDPR requirements. |
+| **Total Cost of Ownership** | High upfront software license commitments ($5k–$100k+/yr). | $0 license fees; costs correlate to self-hosting infrastructure, maintenance, and engineering integration hours. |
+
+---
+
+## How to Contribute
+
+We welcome contributions from IT engineers, security professionals, and open-source maintainers:
+
+1. **Fork the repository** on GitHub.
+2. **Add or refine an entry** in `README.md`:
+   - Keep platform descriptions objective and technically accurate.
+   - For SaaS tools: include starting tier pricing, free tier/trial limits, and verified company valuation/market metrics.
+   - For open-source tools: include the official GitHub star badge linking to the stargazers directory and specify the architectural role.
+3. **Submit a Pull Request** with a brief summary of your proposed changes.
+
+---
+
+## License & Disclaimer
+
+- Licensed under the [MIT License](LICENSE).
+- *Disclaimer*: This repository is community-curated for informational and architectural evaluation purposes. Product names, logos, and brands belong to their respective copyright holders. Pricing, free tier allowances, and enterprise valuation metrics are based on publicly available documentation, government procurement records, and vendor filings. Always verify current commercial terms directly with vendor sales channels prior to procurement.
