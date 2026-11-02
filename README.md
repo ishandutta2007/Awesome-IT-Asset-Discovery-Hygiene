@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://diccord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-IT-Asset-Discovery-Hygiene/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-IT-Asset-Discovery-Hygiene?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-IT-Asset-Discovery-Hygiene/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-IT-Asset-Discovery-Hygiene?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-IT-Asset-Discovery-Hygiene/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-IT-Asset-Discovery-Hygiene?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-IT-Asset-Discovery-Hygiene/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -61,9 +61,9 @@ The table below lists category-leading commercial IT asset discovery and cyber h
 
 ## 💻 Open-Source GitHub Projects
 
-The following open-source solutions provide self-hosted device discovery, endpoint telemetry querying, ITAM, and network CMDB foundations. Repositories are sorted in descending order by GitHub star count. 🌟
+The following open-source solutions provide self-hosted device discovery, endpoint telemetry querying, ITAM, and network CMDB foundations. Repositories are sorted in descending order by GitHub Stars_Count. 🌟
 
-| Project | GitHub Stars | Primary Domain / Focus | Key Capabilities & Architecture |
+| Project | GitHub_Stars | Primary Domain / Focus | Key Capabilities & Architecture |
 | :--- | :--- | :--- | :--- |
 | **[osquery](https://github.com/osquery/osquery)** | [![Stars](https://img.shields.io/github/stars/osquery/osquery?style=social&color=white)](https://github.com/osquery/osquery/stargazers) | Endpoint Instrumentation & Telemetry | Exposes the underlying operating system as an interactive relational database. Execute standard SQL queries against running processes, open network sockets, installed packages, browser extensions, and hardware devices across Linux, macOS, and Windows. |
 | **[NetBox](https://github.com/netbox-community/netbox)** | [![Stars](https://img.shields.io/github/stars/netbox-community/netbox?style=social&color=white)](https://github.com/netbox-community/netbox/stargazers) | Network Infrastructure Source of Truth | Leading DCIM and IPAM tool designed specifically for network automation and infrastructure modeling. Acts as the definitive source of truth for IP allocation, physical cabling, rack layouts, virtual machines, and tenant devices. |
@@ -100,7 +100,7 @@ We welcome contributions from IT engineers, security professionals, and open-sou
 2. **Add or refine an entry** in `README.md`:
    - Keep platform descriptions objective and technically accurate.
    - For SaaS tools: include starting tier pricing, free tier/trial limits, and verified company valuation/market metrics.
-   - For open-source tools: include the official GitHub star badge linking to the stargazers directory and specify the architectural role.
+   - For open-source tools: include the official GitHub Stars_Badge linking to the stargazers directory and specify the architectural role.
 3. **Submit a Pull Request** with a brief summary of your proposed changes.
 
 ---
@@ -126,3 +126,12 @@ Thank you for exploring and using this curated resource! If you find this reposi
 
 - Licensed under the [MIT License](LICENSE).
 - *Disclaimer*: This repository is community-curated for informational and architectural evaluation purposes. Product names, logos, and brands belong to their respective copyright holders. Pricing, free tier allowances, and enterprise valuation metrics are based on publicly available documentation, government procurement records, and vendor filings. Always verify current commercial terms directly with vendor sales channels prior to procurement.
+
+## Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-IT-Asset-Discovery-Hygiene&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-IT-Asset-Discovery-Hygiene_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-IT-Asset-Discovery-Hygiene_growth.svg">
+  </picture>
+</a>
